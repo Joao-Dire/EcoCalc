@@ -1,11 +1,14 @@
+import maoComPlanta from '../../assets/mao-com-planta.jpg';
+
+
 export default function Home() {
   return (
     <div className="h-screen w-screen">
       {/* Seção 1: Texto Inicial */}
-      <section className="h-screen bg-[#4F7942] flex items-center justify-end p-8">
+      <section id="section-home"className="h-screen bg-[#4F7942] flex items-center justify-end p-8" style={{ backgroundImage: `url(${maoComPlanta})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="text-right w-full max-w-5xl">
-          <h1 className="text-5xl font-bold text-[#cdffe299]">Bem-vindo ao EcoCalc</h1>
-          <p className="text-2xl mt-4 text-white">
+          <h1 className="text-5xl font-bold text-[#1ea13099]">Bem-vindo ao EcoCalc</h1>
+          <p className="text-2xl mt-4 text-gray-600">
             O EcoCalc é uma plataforma desenvolvida para ajudar você a calcular a economia gerada pela utilização de energia solar em sua residência. 
             Nosso objetivo é fornecer uma maneira simples e eficiente de calcular o impacto da energia solar no seu bolso, promovendo o uso sustentável e consciente de energia.
           </p>
@@ -13,7 +16,7 @@ export default function Home() {
       </section>
 
       {/* Seção 2: Simulação */}
-      <section className="h-screen bg-white flex flex-col justify-start items-center p-8">
+      <section id="section-calculadora" className="h-screen bg-white flex flex-col justify-center items-center p-8">
         <div className="mb-12 w-full max-w-2xl text-center">
           <h2 className="text-4xl font-semibold text-[#1ea13099]">Simule sua Economia!</h2> 
           <p className="mt-4 text-3xl text-gray-600">
@@ -34,6 +37,7 @@ export default function Home() {
           Acesse a Calculadora
         </a>
       </section>
+
 
       {/* Seção 3: Benefícios da Energia Solar */}
       <section className="h-screen bg-[#4F7942] flex flex-col justify-center items-center p-8">
@@ -62,28 +66,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Seção 4: Depoimentos */}
-      <section className="h-screen bg-white flex flex-col justify-center items-center p-8">
-        <h2 className="text-4xl font-semibold text-[#1ea13099] mb-6">O que Nossos Usuários Dizem</h2>
-        <div className="max-w-3xl w-full">
-          <div className="bg-[#4F7942] p-6 rounded-lg shadow-md mb-6">
-            <p className="text-xl text-white mb-4">
-              "O EcoCalc me ajudou a entender o quanto eu poderia economizar com a energia solar. Agora, estou mais confiante em investir nesse tipo de energia!"
-            </p>
-            <p className="text-lg font-semibold text-[#cdffe299]">Maria Silva</p>
-          </div>
-
-          <div className="bg-[#4F7942] p-6 rounded-lg shadow-md mb-6">
-            <p className="text-xl text-white mb-4">
-              "Utilizar o EcoCalc foi uma experiência muito positiva! A plataforma é simples e eficaz, e agora sei exatamente quanto posso economizar."
-            </p>
-            <p className="text-lg font-semibold text-[#cdffe299]">João Pereira</p>
-          </div>
-        </div>
-      </section>
-
       {/* Seção 5: Sobre Nós */}
-      <section className="h-screen bg-[#4F7942] flex flex-col justify-center items-center p-8">
+      <section id="section-quem-somos" className="h-screen bg-[#4F7942] flex flex-col justify-center items-center p-8">
         <h2 className="text-5xl font-semibold text-[#cdffe299] mb-6">Sobre Nós</h2>
         <p className="text-2xl text-white text-center max-w-md mb-8">
           Conheça a equipe responsável por este projeto, nossos objetivos e os integrantes.

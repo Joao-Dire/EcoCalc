@@ -1,34 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-const Header = () => {
-  // Info do usuário logado
-  const username = "Joao_Dire";
-
+export default function Header() {
   return (
-    <header className="bg-white shadow-md p-4 flex items-center justify-between sticky top-0 z-50 w-full">
-      <Link to="/" className="flex items-center space-x-2">
-        <figure>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/800px-Instagram_logo.svg.png"
-            alt="Intagram Logo"
-            className="h-8"
-          />
-        </figure>
-      </Link>
+    <header className="bg-[#4A9F47] py-6">
+      <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
+        <h1 className="text-3xl font-bold text-white">
+          EcoCalc
+        </h1>
 
-      <Link to={`/${username}`} className="flex items-center space-x-2">
-        <figure>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
-            alt="User Profile"
-            className="w-8 h-8 rounded-full"
-          />
-        </figure>
-        <span className="font-semibold">{username}</span>
-      </Link>
+        <nav className="flex space-x-8">
+          <a href="#section-home" className="text-white text-lg hover:text-[#FFCC00] transition duration-300">Home</a>
+          <a href="#section-quem-somos" className="text-white text-lg hover:text-[#FFCC00] transition duration-300">Quem Somos</a>
+          <a href="#section-calculadora" className="text-white text-lg hover:text-[#FFCC00] transition duration-300">Calculadora</a>
+        </nav>
+      </div>
     </header>
   );
-};
-
-export default Header;
- 
+}
