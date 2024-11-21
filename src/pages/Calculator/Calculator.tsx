@@ -11,7 +11,7 @@ export default function Calculator() {
   const [error, setError] = useState<string>("");
 
   const calcular = () => {
-    const economiaMensal = parseFloat(consumoMensal) * 0.7; // Economia de 70%
+    const economiaMensal = parseFloat(consumoMensal) * 0.7; 
     const tempoRetorno = parseFloat(custoInstalacao) / economiaMensal;
 
     setEconomia(economiaMensal);
@@ -26,7 +26,7 @@ export default function Calculator() {
           retorno,
         });
         setError("");
-        listar(); // Atualiza a lista após salvar
+        listar();
       } catch (err) {
         console.error(err);
         setError("Erro ao salvar os dados.");
@@ -140,7 +140,7 @@ export default function Calculator() {
               onClick={salvar}
               className="bg-[#6BBF59] text-white font-semibold py-3 px-6 rounded-md w-full mt-6"
             >
-              Salvar Economia
+              Salvar no Banco de Dados
             </button>
           </div>
         )}
