@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
     <header className="bg-[#4A9F47] py-6">
       <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
         <h1 className="text-3xl font-bold text-white">
-        <a href="/">Energia Verde</a>
+        <a href="/">EcoCalc</a>
         </h1>
 
         <nav className="flex space-x-8">

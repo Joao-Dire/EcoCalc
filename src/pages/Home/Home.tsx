@@ -3,10 +3,11 @@ import energiaSolar from '../../assets/energiasolar.jpg';
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen">
+    <div className="flex flex-col min-h-screen">
       {/* Seção 1: Texto Inicial */}
-      <section id="section-home" className="h-screen bg-[#4F7942] flex items-center justify-end p-8" style={{ backgroundImage: `url(${maoComPlanta})`, backgroundSize: 'cover', backgroundPosition: 'right' }}>
+      <section id="section-home" className="flex-grow h-screen bg-[#4F7942] flex items-center justify-end p-8" style={{ backgroundImage: `url(${maoComPlanta})`, backgroundSize: 'cover', backgroundPosition: 'right' }}>
         <div className="text-right w-full max-w-5xl">
+          <img src="/src/assets/EcoCALC.png" alt="EcoCalc" className='flex float-right' />
           <h1 className="text-5xl font-bold text-[#1ea13099]">Bem-vindo ao EcoCalc</h1>
           <p className="text-2xl mt-4 text-gray-600">
             O EcoCalc é uma plataforma desenvolvida para ajudar você a calcular a economia gerada pela utilização de energia solar em sua residência. 
@@ -16,7 +17,7 @@ export default function Home() {
       </section>
 
       {/* Seção 2: Simulação */}
-      <section id="section-calculadora" className="h-screen bg-white flex flex-col justify-center items-center p-8">
+      <section id="section-calculadora" className="flex-grow h-screen bg-white flex flex-col justify-center items-center p-8">
         <div className="mb-12 w-full max-w-2xl text-center">
           <h2 className="text-4xl font-semibold text-[#1ea13099]">Simule sua Economia!</h2> 
           <p className="mt-4 text-3xl text-gray-600">
@@ -39,7 +40,7 @@ export default function Home() {
       </section>
 
       {/* Seção 3: Benefícios da Energia Solar */}
-      <section className="h-screen flex flex-col justify-center items-center p-8 relative" style={{ backgroundImage: `url(${energiaSolar})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="flex-grow h-screen flex flex-col justify-center items-center p-8 relative" style={{ backgroundImage: `url(${energiaSolar})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="bg-black bg-opacity-60 w-full h-full absolute top-0 left-0 z-0" />
         <div className="z-10 text-center text-white relative px-8">
           <h2 className="text-5xl font-semibold text-[#1ea13099] mb-12 drop-shadow-lg">Benefícios da Energia Solar</h2>
@@ -69,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* Seção 4: Sobre Nós */}
-      <section id="section-quem-somos" className="h-screen bg-[#4F7942] flex flex-col justify-center items-center p-8">
+      <section id="section-quem-somos" className="flex-grow h-screen bg-[#4F7942] flex flex-col justify-center items-center p-8">
         <h2 className="text-5xl font-semibold text-[#cdffe299] mb-6">Sobre Nós</h2>
         <p className="text-2xl text-white text-center max-w-md mb-8">
           Conheça a equipe responsável por este projeto, nossos objetivos e os integrantes.
