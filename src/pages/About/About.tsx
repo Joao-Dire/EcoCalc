@@ -1,6 +1,4 @@
-import matheus from '../../assets/Matheus.jpeg';
-import joao from '../../assets/Joao.jpg';
-import luan from '../../assets/Luan.png';
+
 
 export default function About() {
   return (
@@ -25,7 +23,7 @@ export default function About() {
           <div className="lg:w-1/2 flex flex-wrap gap-12 justify-center">
             <div className="relative w-60 h-60">
               <img
-                src={matheus}
+                src="/Matheus.jpeg"  
                 alt="Matheus"
                 className="w-full h-full object-cover rounded-full shadow-md"
               />
@@ -33,7 +31,7 @@ export default function About() {
             </div>
             <div className="relative w-60 h-60">
               <img
-                src={joao}
+                src="/Joao.jpg"  
                 alt="Joao"
                 className="w-full h-full object-cover rounded-full shadow-md"
               />
@@ -41,7 +39,7 @@ export default function About() {
             </div>
             <div className="relative w-60 h-60">
               <img
-                src={luan}
+                src="/Luan.png"  
                 alt="Luan"
                 className="w-full h-full object-cover rounded-full shadow-md"
               />
