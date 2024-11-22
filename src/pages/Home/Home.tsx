@@ -1,5 +1,5 @@
-import maoComPlanta from '../../assets/mao-com-planta.jpg';
-import energiaSolar from '../../assets/energiaSolar.jpg';
+import maoComPlanta from 'srcassets/mao-com-planta.jpg';
+import energiaSolar from 'src/assets/energiaSolar.jpg';
 
 export default function Home() {
   return (
