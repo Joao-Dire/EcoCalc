@@ -4,7 +4,6 @@ import About from './pages/About/About';
 import Calculator from './pages/Calculator/Calculator';
 import NotFoundPage from './pages/NotFound/NotFound';
 import Header from './components/header/header';
-import Footer from './components/footer/footer';
 import './index.css';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
-        <Footer />
       </BrowserRouter>
     </div>
   );
